@@ -7,6 +7,6 @@ const typewriter = new Typewriter(app,{
 });
 
 typewriter
-  .typeString('Contamos con 2 sucursales cerca de ti.')
+  .typeString('!Delivery las 24 horas del dia!')
   .pauseFor(200)
   .start();

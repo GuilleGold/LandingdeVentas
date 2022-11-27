@@ -5,6 +5,14 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
+body {
+  background-image:url(../img/fondo.jpg) ;
+  background-repeat: no-repeat;
+  background-position:center center ;
+  height: 1800px;
+  background-attachment: fixed;
+  background-size: cover;
+}
 /*
 MENU===================================================*/
 
@@ -24,16 +32,19 @@ MENU===================================================*/
 .carousel-inner {
   max-height: 39rem !important;
 }
+/*=================================
+    CONTENEDOR DE IMAGENES================*/
+
 /*===================SECCION NUESTRO EQUIPO IMAGEN=
 =========================*/
 #img-equipo{
-  max-height:30rem !important;
+  max-height:40rem !important;
   width:50%;
 }
 /*=================================
 FOOTER================*/
 footer {
-  background-color: #1b2a4e;
+  background-color: #EE193A;
   min-height: 100px;
 }
 footer p {
@@ -49,7 +60,6 @@ footer p {
 =========================*/
 #local {
   margin-top:50px;
-  background-color: #f3f3f3;
   display:flex;
   justify-content: center; 
   padding-bottom: 300px; 
@@ -96,7 +106,7 @@ CONTACTOS BACKGROUND================*/
   top: -130px;
 }
 #seccion-contacto {
-  background-color: #1b2a4e;
+  background-color: #EE193A;
   min-height: 500px;
   position: relative;
 }
@@ -108,7 +118,7 @@ FORMULARIO CONTACTOS================*/
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fbfafa;
+  background: #f3f3f3;
   border-radius: 5px;
   max-width: 500px;
 }
@@ -141,8 +151,15 @@ FORMULARIO CONTACTOS================*/
     display: none;
   }
   .servicio-fila {
-    width: 100% !important;
+    max-width: 100% !important;
     text-align: center;
+  }
+  .servicio-fila{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
   }
   #bg-contacto {
     top: -130px;
@@ -151,9 +168,20 @@ FORMULARIO CONTACTOS================*/
 /*=================================
  MEDIA QUIERE PANTALLA EXTRA -SM================*/
 
-@media (max-width: 576px) {
-  .icono-wrap {
-    flex-wrap: wrap;
-    justify-content: center !important;
+.flex-container{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+.flex-container > div {
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 720px){
+  .flex-container{
+    display: block;
   }
 }
